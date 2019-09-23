@@ -1,5 +1,6 @@
-
+<?php include('admin/lib_include/connection.inc.php'); ?>
 <!doctype html>
+
 <html class="no-js" lang="en">
 <head>
 <meta charset="utf-8">
@@ -29,6 +30,9 @@
         </div>
     </div>
 </section>
+
+<!-- Address and location section start from here -->
+    
 <section id="contact-section">
     <div class="container">
         <div class="row">   
@@ -49,56 +53,24 @@
         <div class="row">
             <div class="col-sm-4">
                 <span><i class="fa fa-map-marker" aria-hidden="true"></i></span>
-                Demo Address
+                New Zealand 
             </div>
             <div class="col-sm-4">
                 <span><i class="fa fa-phone" aria-hidden="true"></i></span>
-                <p>+1 9999999999</p>
+                <p>022123456</p>
             </div>
             <div class="col-sm-4">
                 <span><i class="fa fa-envelope" aria-hidden="true"></i></span>
-                <p>demo@gmail.com</p>
+                <p>Bodytherapy@gmail.com</p>
             </div>
         </div>      
-    </div>
-    <div class="container" id="enquery">
-        <div class="row">
-            <h1>Drop a message </h1>
-        </div>
-        <div class="row">
-
-
-            <form method="post" id='contact_form'>
-                <div id="processResults" style="display:none"></div>
-
-                <div class="col-sm-5">
-                    <div id='contactNameEN_error' class='error'> Please provide your Name.</div>  
-                    <input type="text" placeholder="Name" name='contactNameEN' id='contactNameEN'/>
-                    <div id='contactAccountUsername_error' class='error'> Please provide your email address</div>   
-                    <input type="text" placeholder="Email" name='contactAccountUsername' id='contactAccountUsername'/>
-                    <div id='contactTelephone_error' class='error'> Please provide your Phone Number.</div> 
-                    <input type="text" placeholder="Phone" name="contactTelephone" id="contactTelephone"/>
-                </div>
-                <div class="col-sm-7">
-                    <div id='contactMessage_error' class='error'> Please provide your Message.</div>
-                    <textarea placeholder="Comment" name="contactMessage" id="contactMessage"></textarea>
-                </div>
-                <div class="col-sm-12">
-                <div id='captcha_error' class='error'> Please provide the code as displayed on the image</div>
-                        <img src="includes/verificationimage.php?<?php echo rand(0,9999);?>" title="verification image, type it in the box" class="input_code_img" style="margin-bottom:10px;"/>                    
-                        <input type="text" class="form-control"  name="verImage" id="verImage"  placeholder="Conformation Code">
-                </div>
-                <div class="col-sm-12">
-                    <input type="submit" class="btn" value="Submit" id='send_message'/>
-                </div>
-
-            </form>
-
-
-        </div>      
+          </div>
+         
+      </div>      
     </div>
 </section>
 
+<!-- footer library -->
 <?php include "lib/footer.inc.php" ?>
 
 <link href="css/contactStyles.css" rel="stylesheet" type="text/css" /> 
