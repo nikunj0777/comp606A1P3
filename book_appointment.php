@@ -1,6 +1,7 @@
 <?php include("admin/lib_include/connection.inc.php"); ?>
+<!-- session start -->
 <?php
-	ob_start();
+    ob_start();
     session_start();
     $ses_id= session_id();
     if(empty($_SESSION['regid']))
@@ -20,9 +21,12 @@
 <meta charset="utf-8">
 <meta http-equiv="x-ua-compatible" content="ie=edge">
 <title>Therapy</title>
-<meta name="description" content="">
-<meta name="keywords" content="" />
-<meta name="author" content="">
+	<meta name="description" content="">
+	<meta name="keywords" content="" />
+	<meta name="author" content="">
+
+	<!-- include libraries-->
+	
 <?php include "lib/top.inc.php" ?>
 </head>
 <body>
