@@ -1,5 +1,5 @@
 <?php include('admin/lib_include/connection.inc.php'); ?>
-
+<!--Session start-->
 <?php
   ob_start();
   session_start();
@@ -31,11 +31,13 @@
     <title>Therapy</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
     <?php include "lib/therapy_top.inc.php"; ?>
     <style type="text/css">
       .error {color:#f00 !important;max-width: 100% !important;}
       .fc td, .fc th{cursor: pointer;}
     </style>
+    
     <!--calender script start-->
     <link href='calender_scripts/fullcalendar.min.css' rel='stylesheet' />
     <script src='calender_scripts/moment.min.js'></script>
@@ -76,15 +78,17 @@
                       <div class="container-fluid row bottom-btn"></div>
                     </div>
                   </div><!--administrative-data end-->
-                </div> <!--tab-content end-->
-              </div>  <!--db-tabber end-->
-            </div> <!--panel tabbed-wrap cst-shadow end-->
+                </div> 
+              </div> 
+            </div>
           </div>
-        </div>    <!-- container-fluid end-->
+        </div>   
       </div>
-    </div> <!--wrapper end-->
+    </div> 
 
     <?php /*?>for click menu <?php */?>
+    
+    <!--Java script start from here-->
     <script type="text/javascript">
       $(document).ready(function(){
         $(".push_menu").click(function(){
